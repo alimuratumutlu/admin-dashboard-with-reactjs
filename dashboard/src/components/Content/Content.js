@@ -288,7 +288,7 @@ export default class Content extends Component {
 
         </div>
 
-        <Footer/>
+        <Footer />
 
     </div>
     )
