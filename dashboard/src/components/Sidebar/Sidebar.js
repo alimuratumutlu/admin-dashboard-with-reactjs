@@ -53,7 +53,78 @@ export default class Sidebar extends Component {
               text: 'Tümünü Listele'
             }
           ]
-        }  
+        },
+        
+        {
+          title: "Hakkımızda",
+          notification: false,
+          badgeType: "",
+          badgeCount: 0,
+          arrow: false,
+          icon: "fa fa-handshake-o",
+          subMenu: []
+        },
+
+        
+        {
+          title: "Referanslarımız",
+          notification: false,
+          badgeType: "",
+          badgeCount: 0,
+          arrow: true,
+          icon: "fa fa-fort-awesome",
+          subMenu: [
+            {
+              link: "yeni-referans.html",
+              text: "Yeni Referans Ekle"
+            },
+            {
+              link: 'tum-referanslar.html',
+              text: 'Tümünü Listele'
+            }
+          ]
+        },
+
+        
+        {
+          title: "Ekran Görüntüleri",
+          notification: false,
+          badgeType: "",
+          badgeCount: 0,
+          arrow: true,
+          icon: "fa fa-camera-retro",
+          subMenu: [
+            {
+              link: "yeni-goruntu.html",
+              text: "Yeni Görüntü Ekle"
+            },
+            {
+              link: 'tum-goruntuler.html',
+              text: 'Tümünü Listele'
+            }
+          ]
+        },
+
+        
+        {
+          title: "Fiyatlarımız",
+          notification: false,
+          badgeType: "",
+          badgeCount: 0,
+          arrow: true,
+          icon: "fa fa-btc",
+          subMenu: [
+            {
+              link: "yeni-paket.html",
+              text: "Yeni Fiyat Paketi"
+            },
+            {
+              link: 'fiyat-tablosu.html',
+              text: 'Fiyat Tablosu'
+            }
+          ]
+        },
+
       ]
     };
   }
