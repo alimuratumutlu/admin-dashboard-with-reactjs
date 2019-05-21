@@ -61,7 +61,7 @@ export default class Sidebar extends Component {
           badgeType: "",
           badgeCount: 0,
           arrow: false,
-          icon: "fa fa-handshake-o",
+          icon: "fa fa-wpforms",
           subMenu: []
         },
 
@@ -72,7 +72,7 @@ export default class Sidebar extends Component {
           badgeType: "",
           badgeCount: 0,
           arrow: true,
-          icon: "fa fa-fort-awesome",
+          icon: "fa fa-connectdevelop",
           subMenu: [
             {
               link: "yeni-referans.html",
@@ -92,7 +92,7 @@ export default class Sidebar extends Component {
           badgeType: "",
           badgeCount: 0,
           arrow: true,
-          icon: "fa fa-camera-retro",
+          icon: "fa fa-picture-o",
           subMenu: [
             {
               link: "yeni-goruntu.html",
@@ -112,7 +112,7 @@ export default class Sidebar extends Component {
           badgeType: "",
           badgeCount: 0,
           arrow: true,
-          icon: "fa fa-btc",
+          icon: "fa fa-pencil-square-o",
           subMenu: [
             {
               link: "yeni-paket.html",
@@ -124,6 +124,26 @@ export default class Sidebar extends Component {
             }
           ]
         },
+
+        
+        {
+          title: "İletişim Bilgileri",
+          notification: false,
+          badgeType: "",
+          badgeCount: 0,
+          arrow: true,
+          icon: "fa fa-envelope-open-o",
+          subMenu: [
+            {
+              link: "iletisim-formu.html",
+              text: "İletişim Formu"
+            },
+            {
+              link: 'sosyal-hesaplar.html',
+              text: 'Sosyal Hesaplar'
+            }
+          ]
+        }
 
       ]
     };

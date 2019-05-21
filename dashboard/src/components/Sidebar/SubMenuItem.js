@@ -6,10 +6,10 @@ export default class SubMenuItem extends Component {
   }
   render() {
     const Items = this.props.menuItems.map(item => (
-        <li>
-          <a href={item.link}>{item.text}</a>
-        </li>
-      ));
+      <li>
+        <a href={item.link}>{item.text}</a>
+      </li>
+    ));
 
     return (
       <ul class="nav-second-level" aria-expanded="false">
