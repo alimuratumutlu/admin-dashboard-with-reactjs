@@ -20,6 +20,6 @@ export default class MenuItem extends Component {
           <SubMenuItem menuItems={this.props.menu} />
         )}
       </li>
-    );    
+    );
   }
 }
