@@ -60,6 +60,7 @@ File: Main Css File
 /* Metis Menu css */
 .metismenu {
   padding: 0;
+  padding-top: 65px;
 }
 
 .metismenu ul {
