@@ -1,0 +1,79 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "type": "Post",
+            "title": "Merhaba Dünya",
+            "date": "24/05/2018",
+            "views": 24,
+            "author": "Murat Umutlu",
+            "comments": 3,
+            "category": "Duyurular"
+        },
+        {
+            "id": 2,
+            "type": "Announce",
+            "title": "Okullara Kar Tatili",
+            "date": "04/01/2019",
+            "views": 2598,
+            "author": "Şeref Kanca",
+            "comments": 3,
+            "category": "Haberler"
+        }
+    ],
+    "statistics": 
+    {
+        "todaysvisitors" : 763,
+        "thismonthsvisitors" : 22890,
+        "dailyviews" : 2875,
+        "monthlyviews" : 86250
+    },
+    "landingpages": [
+        {
+            "id": 1,
+            "type": "LandingPage",
+            "title": "Landing Page 1",
+            "seodescription" : "",
+            "seotags" : "",
+            "date": "24/05/2018",
+            "views": 24,
+            "author": "Murat Umutlu",
+            "comments": 3,
+            "category": "Duyurular"
+        },
+        {
+            "id": 2,
+            "type": "LandingPage",
+            "title": "Landing Page 2",
+            "seodescription" : "",
+            "seotags" : "",
+            "date": "04/01/2019",
+            "views": 2598,
+            "author": "Şeref Kanca",
+            "comments": 3,
+            "category": "Haberler"
+        }
+    ],
+    "notifications": [
+        {
+            "id": 1,
+            "who": "Murat",
+            "where" : "Projet.gen.tr",
+            "when" : "06/05/2019 14:16:52",
+            "what": "post",
+            "did": "commented on",
+            "bg" : "success",
+            "icon" : "mdi mdi-comment-outline"
+        },
+        {
+            "id": 2,
+            "who": "Niyazi",
+            "where" : "zetacad.com",
+            "when" : "26/05/2019 18:24:52",
+            "what": "announcment",
+            "did": "liked",
+            "bg" : "danger",
+            "icon" : "mdi mdi-heart"
+        }
+    ]
+}
