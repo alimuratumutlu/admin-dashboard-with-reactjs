@@ -1,5 +1,5 @@
 import React, { Component } from "./node_modules/react";
-import axios from 'axios';
+import axios from './node_modules/axios';
 
 export default class ChartFlow extends Component {
   constructor(props) {

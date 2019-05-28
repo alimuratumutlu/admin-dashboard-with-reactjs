@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 import Topbar from "./Topbar";
 import Footer from "./Footer";
 import Overview from "../Charts/Overview";
