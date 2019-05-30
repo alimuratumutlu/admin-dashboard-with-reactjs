@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Notification from "./Notification";
+import {connect} from 'react-redux'
 
-export default class NotificationBar extends Component {
+import * as ACTIONS from '../../store/actions/actions'
+
+class NotificationBar extends Component {
   constructor(props) {
-    super(props)
-    this.markAsRead = this.markAsRead.bind(this)
+    super(props);
   };
 
   state = {
     notifications: [],
-    notCount: 0
   };
 
   componentDidMount = async () => {
@@ -18,10 +19,6 @@ export default class NotificationBar extends Component {
     this.setState({ notifications: response.data });
     this.setState({ notCount: response.data.length });
   };
-
-  markAsRead() {
-    this.setState({notCount: 0})
-  }
 
   render() {
     const notifications = this.state.notifications.map(notification => (
@@ -48,14 +45,14 @@ export default class NotificationBar extends Component {
         >
           <i className="fi-bell noti-icon" />
           <span className="badge badge-danger badge-pill noti-icon-badge">
-            {this.state.notCount}
+            {this.props.notCount}
           </span>
         </a>
         <div className="dropdown-menu dropdown-menu-right dropdown-menu-animated dropdown-lg">
           <div className="dropdown-item noti-title">
             <h5 className="m-0">
               <span className="float-right">
-                <a href="#" onClick={this.markAsRead} className="text-dark">
+                <a href="#" onClick={() => this.props.action_creator1()} className="text-dark">
                   <small>Tümünü Okundu Yap</small>
                 </a>
               </span>
@@ -78,3 +75,18 @@ export default class NotificationBar extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    notCount: state.notification_reducer.notCount
+  }
+
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    action_creator1: () => dispatch(ACTIONS.okunduyap())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NotificationBar)
