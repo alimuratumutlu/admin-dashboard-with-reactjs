@@ -1,5 +1,4 @@
-import React, { Component } from "./node_modules/react";
-import axios from "./node_modules/axios";
+import React, { Component } from "react";
 
 export default class Overview extends Component {
   constructor(props) {
@@ -11,7 +10,7 @@ export default class Overview extends Component {
   };
 
   componentDidMount = async () => {
-    const response = await axios.get("http://localhost:3004/statistics");
+    const response = await fetch("http://localhost:3004/statistics");
     this.setState({ statistics: response.data });
   };
 
