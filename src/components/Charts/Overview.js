@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import axios from "axios";
+import React, { Component } from "./node_modules/react";
+import axios from "./node_modules/axios";
 
 export default class Overview extends Component {
   constructor(props) {
@@ -7,7 +7,7 @@ export default class Overview extends Component {
   }
 
   state = {
-    statistics: {}
+    statistics: {},
   };
 
   componentDidMount = async () => {

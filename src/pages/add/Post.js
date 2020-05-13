@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Editor } from "@tinymce/tinymce-react";
 
 import Header from "../../layout/Header";
 import Footer from "../../layout/Footer";
@@ -14,7 +13,7 @@ class AddPost extends Component {
     super(props);
   }
 
-  handleEditorChange = e => {
+  handleEditorChange = (e) => {
     console.log("Content was updated:", e.target.getContent());
   };
 
@@ -34,15 +33,6 @@ class AddPost extends Component {
                   value={contentTitle}
                 />
               </h4>
-              <Editor
-                initialValue="<p>This is the initial content of the editor</p>"
-                init={{
-                  plugins: "link image code",
-                  toolbar:
-                    "undo redo | bold italic | alignleft aligncenter alignright | code"
-                }}
-                onChange={this.handleEditorChange}
-              />
               <button
                 onClick={() => this.props.action_creator1(contentTitle)}
                 type="button"
@@ -61,17 +51,14 @@ class AddPost extends Component {
 
 function mapStateToProps(state) {
   return {
-    content_title: state.post_reducer.content_title
+    content_title: state.post_reducer.content_title,
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    action_creator1: text => dispatch(ACTIONS.content_title(text))
+    action_creator1: (text) => dispatch(ACTIONS.content_title(text)),
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(AddPost);
+export default connect(mapStateToProps, mapDispatchToProps)(AddPost);

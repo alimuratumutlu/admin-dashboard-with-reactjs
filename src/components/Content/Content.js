@@ -1,8 +1,8 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import Topbar from "./Topbar";
 import Footer from "./Footer";
-import Overview from "../Charts/Overview";
-import TablewithAction from "../Tables/TablewithAction";
+import Overview from "../charts/overview";
+import TablewithAction from "../tables/TablewithAction";
 
 export default class Content extends Component {
   render() {
@@ -20,9 +20,8 @@ export default class Content extends Component {
 
             <div className="row">
               <div className="col-xl-12">
-                <TablewithAction />    
+                <TablewithAction />
               </div>
-
             </div>
           </div>
         </div>

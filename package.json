@@ -10,15 +10,17 @@
     "react-dom": "^16.8.6",
     "react-draft-wysiwyg": "^1.13.2",
     "react-fontawesome": "^1.6.1",
+    "react-redux": "^7.2.0",
     "react-rooter": "^0.1.2",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^3.4.1",
     "react-simplemde-editor": "^4.0.1",
-    "simplemde": "^1.11.2"
+    "redux": "^4.0.5",
+    "simplemde": "^1.11.2",
+    "tinymce": "^5.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-eslint": "^10.0.1",
     "babel-plugin-react-transform": "^3.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-display-name": "^6.25.0",
